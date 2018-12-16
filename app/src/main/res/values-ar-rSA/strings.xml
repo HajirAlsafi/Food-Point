@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Food Point</string>
+    <string name="nav_feed">الرئيسية</string>
+    <string name="nav_food">الوصفات</string>
+    <string name="nav_chat">الدردشات</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Food Point</string>
+    <string name="sub_title">A Different Food Experience</string>
+    <string name="get_started">بدء</string>
+    <string name="signUp">انشاء حساب</string>
+    <string name="have_account">لديك حساب ، تسجيل الدخول</string>
+    <string name="email_address">البريد الإلكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="forget_password">نسيت كلمة المرور</string>
+    <string name="new_password">أدخل كلمة المرور الجديدة</string>
+    <string name="reset">إعادة تعيين كلمة المرور</string>
+    <string name="notice">بالنقر على إعادة تعيين كلمة المرور، ستتلقى رسالة بريد إلكتروني لإعادة تعيين كلمة المرور الخاصة بك</string>
+    <string name="add_new_recipe">أضف وصفة جديدة</string>
+    <string name="add_new_post">إضافة منشور</string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="update_profile">تحديث الحساب</string>
+    <string name="profile_settings">اعدادات الحساب</string>
+    <string name="tap_to_add_photo">انقر لإضافة صورة</string>
+    <string name="ricepe_name">اسم الوصفة</string>
+    <string name="name">Name</string>
+    <string name="prep_time">وقت التحضير:</string>
+    <string name="min">د</string>
+    <string name="cook_time">وقت الطبخ:</string>
+    <string name="ingredients">المقادير</string>
+    <string name="add_ingredients">اضف المقادير</string>
+    <string name="instructions">طريقة الطهي</string>
+    <string name="add_instructions">اضف خطوات الطهي</string>
+    <string name="feed_field"> بماذا تفكر ؟</string>
+    <string name="date_time">Mon at 07:30</string>
+    <string name="likes">إعجاب</string>
+    <string name="comments">تعليق</string>
+    <string name="chat">دردشة</string>
+    <string name="feed">feedTextView</string>
+    <string name="type_message">اكتب رسالة</string>
+    <string name="recipe_writer">Recipe writer</string>
+    <string name="new_post">منشور جديد</string>
+    <string name="new_recipe">وصفة جديدة</string>
+    <string name="add_comment">اضف تعليق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="share">مشاركة</string>
+    <string name="search">بحث</string>
+    <string name="photo">صورة</string>
+    <string name="empty_message">لايمكن ارسال رسالة فارغة</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="provide_user_name">الرجاء ادخال اسم المستخدم</string>
+
+
+</resources>

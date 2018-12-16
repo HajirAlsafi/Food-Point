@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+
+    <include
+        android:id="@+id/chat_page_toolbar"
+        layout="@layout/app_tool_bar">
+
+    </include>
+
+    <ImageView
+        android:id="@+id/chatImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alpha="0.7"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chats"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chat_page_toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/chatRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/chatConstraintLayout"
+            app:layout_constraintTop_toTopOf="@+id/chatImageView"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/chatConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/search_shape"
+        app:layout_constraintBottom_toBottomOf="@+id/chatImageView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <EditText
+            android:id="@+id/typeMessageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/type_message"
+            android:inputType="textMultiLine"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sendMessageImageView"
+            app:layout_constraintStart_toEndOf="@+id/sendPhotoImageView" />
+
+        <ImageView
+            android:id="@+id/sendMessageImageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="sendMessage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/send" />
+
+        <ImageView
+            android:id="@+id/sendPhotoImageView"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/send_image"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="sendPhoto"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFoodActivity"
+    android:id="@+id/addRecipeRelative"
+    >
+
+
+
+    <include
+        android:id="@+id/add_food_page_toolbar"
+        layout="@layout/app_tool_bar"
+        >
+    </include>
+
+
+    <ImageView
+        android:id="@+id/addRecipeImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/add_food_page_toolbar"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/addrecipe"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/add_food_page_toolbar"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_food_page_toolbar">
+
+
+        <LinearLayout
+            android:id="@+id/addFoodLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/recipeImage"
+                android:layout_width="160dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+                app:srcCompat="@color/cardview_dark_background"
+
+                 />
+
+            <TextView
+                android:id="@+id/tapToAddPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tap_to_add_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/ricepe_name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ricepeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/ricepe_name"
+                android:inputType="none"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:autofillHints="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prep_time"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/prepTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                     />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text="@string/min" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cook_time"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cookTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="number"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/ingredients"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+
+            <EditText
+                android:id="@+id/ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:hint="@string/add_ingredients"
+                android:inputType="textMultiLine"
+                android:textSize="16sp"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/instructions"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+
+            <EditText
+                android:id="@+id/instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:hint="@string/add_instructions"
+                android:text=""
+                android:textSize="16sp"
+                android:inputType="" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

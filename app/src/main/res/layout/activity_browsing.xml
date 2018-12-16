@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/browsingRelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BrowsingActivity">
+
+
+
+        <include layout="@layout/app_tool_bar"
+            android:id="@+id/browsing_page_toolbar"/>
+
+
+
+    <ImageView
+        android:id="@+id/browsingImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/browsing_page_toolbar"
+        android:alpha="0.7"
+        android:scaleType="centerCrop"
+        android:src="@drawable/feed"
+        />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/bottombar_app_menu">
+
+    </android.support.design.widget.BottomNavigationView>
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_bottom"
+        android:layout_below="@id/browsing_page_toolbar"
+       >
+
+    </FrameLayout>
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nav_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonColorPressed="@color/colorPrimaryDark"
+        app:fab_addButtonPlusIconColor="@android:color/white"
+        app:fab_labelStyle="@style/customFab"
+        android:id="@+id/floatingActionMenu"
+      >
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/nav_bottom"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_title="@string/add_new_post" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/nav_bottom"
+            app:fab_colorNormal="@android:color/white"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_size="mini"
+            app:fab_title="@string/add_new_recipe" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
